@@ -1,0 +1,81 @@
+Metaclean: -- Table: public.metaclean
+
+-- DROP TABLE IF EXISTS public.metaclean; Idris
+
+CREATE TABLE IF NOT EXISTS public.metaclean
+(
+    url text COLLATE pg_catalog."default",
+    title text COLLATE pg_catalog."default",
+    studio text COLLATE pg_catalog."default",
+    rating text COLLATE pg_catalog."default",
+    runtime text COLLATE pg_catalog."default",
+    castt text COLLATE pg_catalog."default",
+    director text COLLATE pg_catalog."default",
+    genre text COLLATE pg_catalog."default",
+    summary text COLLATE pg_catalog."default",
+    awards text COLLATE pg_catalog."default",
+    metascore text COLLATE pg_catalog."default",
+    userscore text COLLATE pg_catalog."default",
+    reldate text COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.metaclean
+    OWNER to postgres;
+
+
+
+movies (sales) -- Table: public.movies
+
+-- DROP TABLE IF EXISTS public.movies;
+
+CREATE TABLE IF NOT EXISTS public.movies
+(
+    year1 text COLLATE pg_catalog."default",
+    release_date text COLLATE pg_catalog."default",
+    title text COLLATE pg_catalog."default",
+    genre text COLLATE pg_catalog."default",
+    international_box_office text COLLATE pg_catalog."default",
+    domestic_box_office text COLLATE pg_catalog."default",
+    worldwide_box_office text COLLATE pg_catalog."default",
+    production_budget text COLLATE pg_catalog."default",
+    unnamed_8 text COLLATE pg_catalog."default",
+    opening_weekend text COLLATE pg_catalog."default",
+    theatre_count text COLLATE pg_catalog."default",
+    avg_run_per_theatre text COLLATE pg_catalog."default",
+    runtime text COLLATE pg_catalog."default",
+    keywords text COLLATE pg_catalog."default",
+    creative_type text COLLATE pg_catalog."default",
+    url text COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.movies
+    OWNER to postgres;
+
+
+
+Expert reviews -- Table: public.reviews
+
+-- DROP TABLE IF EXISTS public.reviews;
+
+CREATE TABLE IF NOT EXISTS public.reviews
+(
+    url text COLLATE pg_catalog."default",
+    reviewer text COLLATE pg_catalog."default",
+    datep text COLLATE pg_catalog."default",
+    rev text COLLATE pg_catalog."default",
+    idvscore text COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.reviews
+    OWNER to postgres;
+
+
+
+
+
