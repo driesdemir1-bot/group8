@@ -11,7 +11,7 @@ import statsmodels.api as sm
 import matplotlib.pyplot as plt
 
 # ---- DB connection ----
-engine = create_engine("postgresql+psycopg2://postgres:12345678@localhost:5432/mydb")
+engine = create_engine("postgresql+psycopg2://tristanriethorst@localhost:5432/mydb")
 
 def fetch_df(sql: str, params: dict | None = None) -> pd.DataFrame:
     with engine.begin() as conn:
