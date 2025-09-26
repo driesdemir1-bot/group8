@@ -1,5 +1,5 @@
 # h3_analysis.py
-# Hypothesis (H3):
+# Hypothesis (H3): Roy
 # Positive user reviews sustain run length post-opening,
 # whereas critic reviews influence initial theatre count and opening weekend revenue.
 
